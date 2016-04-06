@@ -1,0 +1,15 @@
+
+make clean
+
+export CFLAGS="-I. -I/usr/local/minigui/local/include"
+export LDFLAGS="-L/usr/local/minigui/local/lib"
+
+
+./configure --enable-static=yes --enable-shared=no --prefix=/usr/local/minigui/local --exec_prefix=/usr/local/minigui/local
+
+make
+
+make install
+
+echo "zlib-1.2.2 Make successful"
+
